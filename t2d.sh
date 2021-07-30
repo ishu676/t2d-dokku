@@ -105,13 +105,13 @@ case `select_opt "${options[@]}"` in
         wait 
         echo "updating to new file"
         sudo rm -r easydokku.sh
-        wget https://raw.githubusercontent.com/ishu676/t2d-dokku/master/easydokku.sh
+        wget https://github.com/ishu676/t2d-dokku/easydokku.sh
         wait
         echo "Downloaded New file"
     else 
         echo "$FILE does not exist."
         echo "Dowloading the latest file"
-        wget https://raw.githubusercontent.com/ishu676/t2d-dokku/master/easydokku.sh
+        wget https://github.com/ishu676/t2d-dokku/easydokku.sh
         wait
     fi;;  
     1) 
@@ -122,7 +122,7 @@ case `select_opt "${options[@]}"` in
     else 
         echo "$FILE does not exist."
         echo "Dowloading the latest file"
-        wget https://raw.githubusercontent.com/ishu676/t2d-dokku/master/easydokku.sh
+        wget https://github.com/ishu676/t2d-dokku/easydokku.sh
         wait
         sudo chmod +x easydokku.sh
     fi;;
